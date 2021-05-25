@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: DFKai-sb;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .under {
+      width: 730px;
+      height: 785px;
+      border: solid black 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text {
+      font-size: 2.5rem;
+      padding: 20px;
+      -webkit-writing-mode: vertical-lr;
+      writing-mode: vertical-lr;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    td {
+      width: 75px;
+      height: 75px;
+      border: solid black 1px;
+    }
+
+    .river {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    .up {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      /* table600 + chess60 */
+      width: 660px;
+      /* table675 + chess60 */
+      height: 735px;
+      display: flex;
+      justify-content: space-between;
+      /* align-items: center; */
+      flex-direction: column;
+    }
+
+    .bow {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 510px;
+      height: 435px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+
+    .div {
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      border: solid black 1px;
+      border-radius: 50%;
+      font-size: 2.5rem;
+    }
+
+
+    .chess1 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .chess2 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .chess3 {
+      display: flex;
+      justify-content: space-between;
+      color: red;
+    }
+
+    .chess4 {
+      display: flex;
+      justify-content: space-between;
+      color: red;
+    }
+
+    .bow1 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .bow2 {
+      display: flex;
+      justify-content: space-between;
+      color: red;
+    }
+
+    .t1 {
+      background: linear-gradient(45deg, transparent 49.5%, black 50.5%, transparent 51%);
+    }
+
+
+    .t2 {
+      background: linear-gradient(-45deg, transparent 49.5%, black 50.5%, transparent 51%);
+    }
+
+
+    .t3 {
+      background: linear-gradient(-45deg, transparent 49.5%, black 50.5%, transparent 51%);
+    }
+
+
+    .t4 {
+      background: linear-gradient(45deg, transparent 49.5%, black 50.5%, transparent 51%);
+    }
+
+
+    .t5 {
+      background: linear-gradient(45deg, transparent 49.5%, black 50.5%, transparent 51%);
+    }
+
+    .t6 {
+      background: linear-gradient(-45deg, transparent 49.5%, black 50.5%, transparent 51%);
+    }
+
+    .t7 {
+      background: linear-gradient(-45deg, transparent 49.5%, black 50.5%, transparent 51%);
+    }
+
+    .t8 {
+      background: linear-gradient(45deg, transparent 49.5%, black 50.5%, transparent 51%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="text">棋盤裡，車無輪，馬無疆，叫聲將軍提防提防</div>
+  <div class="under">
+    <table>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="t1"></td>
+        <td class="t2"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="t3"></td>
+        <td class="t4"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="river">
+        <td colspan="4" style="border-right: none;">
+          <h1>楚河</h1>
+        </td>
+        <td colspan="4" style="border-left: none;">
+          <h1>漢界</h1>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="t5"></td>
+        <td class="t6"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="t7"></td>
+        <td class="t8"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  <div class="text">圖畫裡，龍不吟，虎不嘯，小小書僮可笑可笑</div>
+  <div class="up">
+    <div class="chess1">
+      <div class="div">車</div>
+      <div class="div">馬</div>
+      <div class="div">象</div>
+      <div class="div">士</div>
+      <div class="div">將</div>
+      <div class="div">士</div>
+      <div class="div">象</div>
+      <div class="div">馬</div>
+      <div class="div">車</div>
+    </div>
+    <div class="chess2">
+      <div class="div">卒</div>
+      <div class="div">卒</div>
+      <div class="div">卒</div>
+      <div class="div">卒</div>
+      <div class="div">卒</div>
+    </div>
+    <div class="chess3">
+      <div class="div">兵</div>
+      <div class="div">兵</div>
+      <div class="div">兵</div>
+      <div class="div">兵</div>
+      <div class="div">兵</div>
+    </div>
+    <div class="chess4">
+      <div class="div">俥</div>
+      <div class="div">傌</div>
+      <div class="div">相</div>
+      <div class="div">仕</div>
+      <div class="div">帥</div>
+      <div class="div">仕</div>
+      <div class="div">相</div>
+      <div class="div">傌</div>
+      <div class="div">俥</div>
+    </div>
+  </div>
+  <div class="bow">
+    <div class="bow1">
+      <div class="div">包</div>
+      <div class="div">包</div>
+    </div>
+    <div class="bow2">
+      <div class="div">炮</div>
+      <div class="div">炮</div>
+    </div>
+  </div>
+</body>
+
+</html>

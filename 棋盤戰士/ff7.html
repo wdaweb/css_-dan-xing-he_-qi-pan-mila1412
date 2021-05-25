@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    .bg {
+      display: flex;
+      height: 100vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),
+        url(./ff7/bg-full.jpg) no-repeat center/cover;
+    }
+
+    .container {
+      margin: auto;
+      width: 80%;
+      height: 80%;
+      display: flex;
+      border: solid rgb(78, 78, 78) 1px;
+    }
+
+    .container1 {
+      background-color: rgba(0, 0, 0, .5);
+      background-blend-mode: multiply;
+      background-image: url(./ff7/main.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 50%;
+      height: 100%;
+      display: flex;
+    }
+
+
+    .container2 {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .col-1 {
+      margin: auto;
+      width: 70%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .ps4 {
+      width: 70%;
+      height: 70%;
+      background: url(./ff7/ps4-ff7.png) no-repeat center/cover;
+      background-size: 60%;
+    }
+
+    .text1 {
+      text-align: center;
+      color: white;
+    }
+
+    .text2 {
+      color: black;
+      align-self: center;
+      margin-left: 40px;
+      width: 65%;
+    }
+
+    .text3 {
+      color: white;
+      align-self: center;
+      width: 65%;
+      font-size: 1rem;
+      margin-right: 20px;
+    }
+
+
+    .col-2 {
+      height: 50%;
+      background: rgb(163, 163, 163);
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .col-3 {
+      /* width: 100%; */
+      height: 50%;
+      background: black;
+      display: flex;
+      align-items: flex-end;
+
+    }
+
+    /* 分配寬度 */
+    .cloud {
+      width: 40%;
+      height: 90%;
+      background: url(./ff7/cloud.png) no-repeat center/cover;
+      /* background-size: 100%; */
+    }
+
+    .tifa {
+      margin-left: 10px;
+      width: 40%;
+      height: 90%;
+      background: url(./ff7/tifa.png) no-repeat center/cover;
+      /* background-size: 100%; */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg">
+    <div class="container">
+      <div class="container1">
+        <div class="col-1">
+          <div class="ps4"></div>
+          <div class="text1">
+            <h1>AVAILABLE NOW</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis, sapiente officiis
+              laboriosam
+              cumque pariatur, molestias aperiam qui quisquam dolore ex numquam nesciunt adipisci accusantium quasi.
+              Reprehenderit optio nobis quo.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container2">
+        <div class="col-2">
+          <div class="text2">
+            <h1>Cloud</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis, sapiente officiis
+              laboriosam
+              cumque pariatur, molestias aperiam qui quisquam dolore ex numquam nesciunt adipisci accusantium quasi.
+              Reprehenderit optio nobis quo.</p>
+          </div>
+          <div class="cloud"></div>
+        </div>
+        <div class="col-3">
+          <div class="tifa"></div>
+          <div class="text3">
+            <h1>Tifa</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis, sapiente officiis
+              laboriosam
+              cumque pariatur, molestias aperiam qui quisquam dolore ex numquam nesciunt adipisci accusantium quasi.
+              Reprehenderit optio nobis quo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
